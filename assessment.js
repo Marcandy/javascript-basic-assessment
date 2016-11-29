@@ -5,7 +5,7 @@ var hello = 'goodbye';
 
 // #2 Use the variable iLove to create a new variable called iLoveCode that is assigned the string "I love code"
 var iLove = 'I love';
-var iLoveCode = 'I love code';
+var iLoveCode = iLove + ' code';
 
 // #3  Make an object called bob and give it the following properties
 // bob has a height of 6ft (string)
@@ -29,6 +29,7 @@ var myShirt = {
 	type: 'polo',
 	color: 'red'
 };
+
 myShirt.color = 'pink';
 
 // Change my shirt type to spandex using square bracket notation
@@ -60,7 +61,7 @@ var snake = {
 function change(obj) {
 	obj = snake;
 	for (var key in obj) {
-		if (obj.hasOwnProperty(key) ) {
+		if (key[0] === 's') {
 			obj[key] = 's';
 		}
 	}
